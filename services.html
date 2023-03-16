@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS50 Homepage</title>
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">
+        <img
+          src="images/Screen Shot 2023-03-15 at 4.09.24 PM.png"
+          alt=""
+          id="cs50_logo"
+        />
+        Dog Walkers
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link active">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header__services">
+      <div class="header">
+        <div class="title__text">
+          <h1 class="title">CS50's Services</h1>
+          <p class="header__text">
+            Using our patented algorithims we are able to provide your best
+            friend an individually tailored walk like no other.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="services__container">
+        <ol class="services__list">
+          <li class="services__listItem">
+            <div class="services__text">
+              <h3 class="service__title">Fire Hidrant Optimization</h3>
+              <p>
+                Our algorithm will calculate a walking route that maximizes the
+                number of fire hidrants to pass within your walking distance.
+              </p>
+            </div>
+            <img
+              class="services__img"
+              src="images/DALL·E 2023-03-16 10.05.55 - a happy and excited dog looking at a fire hydrant while on a walk.png"
+              alt=""
+            />
+          </li>
+          <li class="services__listItem">
+            <div class="services__text">
+              <h3 class="service__title">Doggie Face Recognition</h3>
+              <p>
+                Using your cell phone camera and our App, you can scan other
+                dogs on the walk and it will show name, sex, and agressivness
+                for each dog, so you know which dogs you can approach.
+              </p>
+            </div>
+            <img
+              class="services__img"
+              src="images/DALL·E 2023-03-16 10.06.19 - an image of a dog like it is being viewed through an app that uses facial recognition software which shows its name, breed, and weight.png"
+              alt=""
+            />
+          </li>
+          <li class="services__listItem">
+            <div class="services__text">
+              <h3 class="service__title">Buried Bone Geo-Location</h3>
+              <p>
+                Never lose a buried bone again. Our geo-location mapping will
+                remeber every buried bone and will beep when nearing a prized
+                treasure.
+              </p>
+            </div>
+            <img
+              class="services__img"
+              src="images/DALL·E 2023-03-16 10.18.40 - a photo of a dog burying a bone.png"
+              alt=""
+            />
+          </li>
+        </ol>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

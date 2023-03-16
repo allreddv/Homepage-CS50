@@ -27,13 +27,23 @@ nav {
   height: 3rem;
 }
 
-header {
+.header__index,
+.header__services,
+.header__about {
   display: flex;
   min-height: 100vh;
   height: fit-content;
   background-image: url(https://images.unsplash.com/photo-1527526029430-319f10814151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header__services {
+  background-image: url(https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.header__about {
+  background-image: url(images/DALL·E\ 2023-03-16\ 11.36.48\ -\ a\ nerdy\ dog\ wearing\ eyeglasses\ \ sitting\ at\ a\ desk\ and\ writing\ computer\ code.png);
 }
 
 .title__text {
@@ -51,9 +61,9 @@ header {
 
 .header__text {
   display: flex;
-  width: 20rem;
+  width: 25rem;
   font-size: 1.6rem;
-  text-align: center;
+  text-align: left;
 }
 
 .seenIn {
@@ -113,9 +123,71 @@ header {
   flex-direction: column;
   text-align: left;
 }
+
+.services__list {
+  padding-left: 0;
+}
+
+.services__container {
+  display: flex;
+
+  width: 100%;
+}
+
+.services__text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.services__listItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+.services__img {
+  grid-column: 2 / 4;
+  justify-self: end;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 2rem;
+}
+
+.form__input {
+  border-radius: 5px;
+  border: none;
+  height: 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-left: 2rem;
+}
+
+.form__input::placeholder {
+  padding-left: 2rem;
+  color: rgb(50, 50, 165);
+  opacity: 60%;
+}
+
+.pricing__body {
+  background-color: #e1e1ee;
+}
+
+/* ------------------------------------------------------------------- */
+
 @media (max-width: 980px) {
-  header {
+  .header__index {
     background-image: url(https://images.unsplash.com/photo-1504826260979-242151ee45b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  }
+
+  .header__services {
+    background-image: url(https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=672&q=80);
   }
 
   #navbarNav {
@@ -194,5 +266,33 @@ header {
 
   .testimonial__container {
     text-align: center;
+  }
+
+  .services__listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services__img {
+    width: 100%;
+  }
+  .services__container {
+    padding: 0rem;
+  }
+  .services__list {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .services__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
   }
 }
