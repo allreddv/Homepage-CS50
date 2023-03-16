@@ -16,7 +16,7 @@
   </head>
   <body class="pricing__body">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a href="#" class="navbar-brand">
+      <a href="index.html" class="navbar-brand">
         <img
           src="images/Screen Shot 2023-03-15 at 4.09.24 PM.png"
           alt=""
@@ -54,21 +54,55 @@
       </div>
     </nav>
     <main>
-      <form action="get">
-        <input type="text" placeholder="Enter dog's name" class="form__input" />
+      <h2 class="pricing__title">
+        We customize quotes based on each dog's needs. Please fill in the form
+        below and we will email you a personalized quote.
+      </h2>
+      <form action="get" id="form">
         <input
           type="text"
-          placeholder="Enter dog's weight"
+          placeholder="Enter dog's name"
           class="form__input"
+          id="name"
+          autocomplete="off"
         />
-        <input type="text" placeholder="Enter dog's age" class="form__input" />
+        <p class="error hidden" id="error_name">Can't be blank</p>
+        <input
+          type="text"
+          placeholder="Enter dog's weight in pounds"
+          class="form__input"
+          id="weight"
+          autocomplete="off"
+        />
+        <p class="error hidden" id="error_weight">Must be a number</p>
+        <input
+          type="text"
+          placeholder="Enter dog's age in years"
+          class="form__input"
+          id="age"
+          autocomplete="off"
+        />
+        <p class="error hidden" id="error_age">Must be a number</p>
         <input
           type="email"
+          required
           placeholder="Enter your email"
           class="form__input"
+          id="email"
+          autocomplete="off"
         />
-        <button class="btn__submit" type="submit">Submit</button>
+        <p class="error hidden" id="error_email">Must be a valid email.</p>
+        <button class="btn__submit" type="submit" id="submitBtn">Submit</button>
       </form>
+      <div class="thanks">
+        <video
+          class="video hidden"
+          id="video"
+          src="images/pexels-rodnae-productions-7563906.mp4"
+          autoplay
+          loop
+        ></video>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
